@@ -15,12 +15,12 @@ class CatN : Cat
         this.k = 0;
     }
 
-    public void Meow(int? n = null)
+    public override void Meow(int? n = null)
     {
         base.Meow(n);
-        if (n is null || n == 0)
+        if (n is null)
             k++;
-        else
+        else if (n != 0)
             k += (int)n;
     }
 }

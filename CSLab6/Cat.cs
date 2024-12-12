@@ -18,7 +18,7 @@ class Cat : ICat
         return $"Имя: {name}";
     }
 
-    public void Meow(int? n = null)
+    public override void Meow(int? n = null)
     {
         if (n == null)
         {

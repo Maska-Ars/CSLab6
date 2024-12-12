@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-interface ICat
+abstract class ICat
 {
-    void Meow(int? n = null);
+    public abstract void Meow(int? n = null);
 }
